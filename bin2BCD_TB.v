@@ -56,21 +56,21 @@ module bin2BCD_TB();
     forever
     begin
     en = 1;
-    A = 4'b0110; B = 4'b1100; Cin = 1'b0;
+    A = 4'b0110; B = 4'b0000; Cin = 1'b0;
     #20 //en must catch rising edge of clk
     en = 0;
     #620; 
     
     en = 1;
     #20
-    A = 4'b0101; B = 4'b1100; Cin = 1'b0;
+    A = 4'b0101; B = 4'b0000; Cin = 1'b0;
     en = 0;
      
     #620; 
     
 
     en = 1;
-    A = 4'b1101; B = 4'b1000; Cin = 1'b0;
+    A = 4'b1101; B = 4'b0000; Cin = 1'b0;
     #20
     en = 0;
     //A = 4'b1001; B = 4'b1001; Cin = 1'b0;
@@ -78,7 +78,7 @@ module bin2BCD_TB();
     
 
     en = 1;
-     A = 4'b1001; B = 4'b1001; Cin = 1'b0;
+     A = 4'b1001; B = 4'b0000; Cin = 1'b0;
     #20
     en = 0;
     // A = 4'b1001; B = 4'b1111; Cin = 1'b1;
@@ -86,7 +86,7 @@ module bin2BCD_TB();
     
 
     en = 1;
-     A = 4'b1111; B = 4'b1111; Cin = 1'b0;
+     A = 4'b1111; B = 4'b0000; Cin = 1'b0;
     #20
     en = 0;
      //A = 4'b1000; B = 4'b0001; Cin = 1'b1;
@@ -95,7 +95,7 @@ module bin2BCD_TB();
     
 
     en = 1;
-    A = 4'b1011; B = 4'b1101; Cin = 1'b0;
+    A = 4'b1011; B = 4'b0000; Cin = 1'b0;
     #20
     en = 0;
     //A = 4'b1011; B = 4'b1101; Cin = 1'b1;
